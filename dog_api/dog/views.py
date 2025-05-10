@@ -18,6 +18,6 @@ class DogViewSet(viewsets.ModelViewSet):
             return queryset.get_dog_list_w_breed_average_age()
 
         if self.action == "retrieve":
-            return queryset.get_dog_w_count_dog_same_breed_count()
+            return queryset.get_dog_w_count_dog_same_breed()
 
         return queryset
